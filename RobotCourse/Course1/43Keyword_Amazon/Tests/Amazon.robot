@@ -10,9 +10,9 @@ Suite Teardown  Common.Cleanup Testing Data
 
 *** Test Cases ***
 User must search for products
-    [Documentation]  This is some basic info about the test
-    [Tags]  Smoke
-    Amazon.Search for Products
+   [Documentation]  This is some basic info about the test
+   [Tags]  Smoke
+   Amazon.Search for Products
 
 User must sign in to checkout
     [Documentation]  This is some basic info about the test
