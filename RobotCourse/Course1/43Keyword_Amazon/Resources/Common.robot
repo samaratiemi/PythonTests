@@ -3,10 +3,10 @@ Library  Selenium2Library
 
 *** Keywords ***
 Begin Web Test
-    open browser  about:blank  ie
+    Open Browser  about:blank  ie
 
 End Web Test
-    close browser
+    Close Browser
 
 Insert Testing Data
     Custom keyword 1

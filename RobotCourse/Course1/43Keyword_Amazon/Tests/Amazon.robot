@@ -14,6 +14,7 @@ User must search for products
    [Tags]  Smoke
    Amazon.Search for Products
 
+*** Test Cases ***
 User must sign in to checkout
     [Documentation]  This is some basic info about the test
     [Tags]  Smoke
