@@ -5,6 +5,7 @@ Resource  ../Resources/Amazon.robot   # for lower level keywords in test cases
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
+
 *** Variables ***
 ${BROWSER} =   ie
 ${START_URL} =   http://www.amazon.com
