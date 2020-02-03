@@ -7,12 +7,6 @@ Resource  ../Resources/PO/Product.robot
 Resource  ../Resources/PO/Cart.robot
 Resource  ../Resources/PO/SignIn.robot
 
-*** Variables ***
-${BROWSER} =   ie
-${START_URL} =   https://www.amazon.com
-${SEARCH_TERM} =   Lamborguini
-
-
 *** Keywords ***
 Search for Products
     LandingPage.Load
@@ -29,5 +23,5 @@ Add Product to Cart
 
 Begin Checkout
     Cart.Go To Checkout
-    Cart.No Coverage Added
+    #Cart.No Coverage Added
     SignIn.Login Page

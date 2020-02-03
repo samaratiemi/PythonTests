@@ -3,7 +3,8 @@ Library  Selenium2Library
 
 *** Keywords ***
 Go to Checkout
-    Click Element   id=hlb-ptc-btn-native
+    Click Element   id=attach-sidesheet-checkout-button
+    #Click Element   id=hlb-ptc-btn-native
 
 No Coverage Added
     Wait Until Page Contains   Add to your order

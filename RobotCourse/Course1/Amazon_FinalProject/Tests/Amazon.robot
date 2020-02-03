@@ -1,17 +1,20 @@
 *** Settings ***
 Documentation  This is some basic info about the whole suite
-Resource  ../Resources/Amazon.robot
-Resource  ../Resources/Common.robot
-
-Suite Setup  Common.Insert Testing Data
+Resource  ../Resources/Common.robot   #for Setup & Test Teardown
+Resource  ../Resources/Amazon.robot   # for lower level keywords in test cases
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
-Suite Teardown  Common.Cleanup Testing Data
+
+*** Variables ***
+${BROWSER} =   ie
+${START_URL} =   http://www.amazon.com
+${SEARCH_TERM} =   Ferrari 458
+
 
 *** Test Cases ***
-User must search for products
+Logged out user can search for products
    [Documentation]  This is some basic info about the test
-   [Tags]  Smoke
+   [Tags]  Current
    Amazon.Search for Products
 
 *** Test Cases ***
