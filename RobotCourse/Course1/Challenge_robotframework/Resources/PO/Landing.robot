@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Libraru7
+Library  Selenium2Library
 
 *** Variables ***
 ${LANDING_HEADER_NAME} =  id=mainNav
